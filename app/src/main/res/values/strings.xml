@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">게임고 삼시세끼</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>
