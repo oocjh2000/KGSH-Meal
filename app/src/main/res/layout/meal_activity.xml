@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/todayMeals"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e9e9e9"
-    tools:context="com.pointstudio.kgshmealdataapp.MealActivity">
+    tools:context="com.pointstudio.kgshmealdataapp.activity.MealActivity">
 
     <RelativeLayout
-        android:id="@+id/todayDateLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark">
 
         <!-- 왼쪽 버튼 -->
         <Button
-            android:id="@+id/yesterday"
+            android:id="@+id/kg_meal_yesterday"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
@@ -27,7 +27,7 @@
 
         <!-- 오른쪽 버튼 -->
         <Button
-            android:id="@+id/tomorrow"
+            android:id="@+id/kg_meal_tomorrow"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentEnd="true"
@@ -38,7 +38,7 @@
             android:backgroundTint="#454545" />
 
         <TextView
-            android:id="@+id/todayDate"
+            android:id="@+id/kg_meal_today"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -51,28 +51,35 @@
     </RelativeLayout>
 
     <ListView
-        android:id="@+id/mealListView"
+        android:id="@+id/kg_meal_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/todayDateLayout" />
+        android:layout_alignParentStart="true" />
 
-    <GridLayout
+    <LinearLayout
+        android:id="@+id/kg_meal_nomeal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/todayDateLayout">
+        android:gravity="center">
 
         <TextView
-            android:id="@+id/NoMeal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="오늘은 급식이 없는것 같습니다."
             android:textColor="#000000"
             android:textSize="10pt" />
+    </LinearLayout>
 
-    </GridLayout>
+    <LinearLayout
+        android:id="@+id/kg_meal_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
 </RelativeLayout>
