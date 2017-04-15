@@ -1,130 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     android:weightSum="1">
+
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginBottom="1pt"
+            android:layout_marginTop="3pt"
             android:layout_marginLeft="5pt"
             android:layout_marginRight="5pt"
-            android:layout_marginTop="3pt"
-            android:background="@drawable/layer_card_background"
-            android:orientation="vertical">
+            android:layout_marginBottom="1pt"
+            android:background="@drawable/layer_card_background">
 
             <TextView
-                android:id="@+id/kg_meal_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Morning"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/colorText"
                 android:textSize="15pt"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:id="@+id/textTime"
+                android:gravity="center"
+                android:textColor="@color/colorText"/>
 
             <TextView
-                android:id="@+id/kg_meal_item1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Meal1"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/colorMealText"
-                android:textSize="12pt" />
+                android:textColor="#000000"
+                android:textSize="12pt"
+                android:id="@+id/mealItem1"
+                android:gravity="center"/>
 
             <TextView
-                android:id="@+id/kg_meal_item2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Meal2"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/colorMealText"
-                android:textSize="12pt" />
+                android:textColor="#000000"
+                android:textSize="12pt"
+                android:id="@+id/mealItem2"
+                android:gravity="center"/>
 
             <TextView
-                android:id="@+id/kg_meal_item3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Meal3"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/colorMealText"
-                android:textSize="12pt" />
+                android:textColor="#000000"
+                android:textSize="12pt"
+                android:id="@+id/mealItem3"
+                android:gravity="center"/>
 
             <TextView
-                android:id="@+id/kg_meal_item4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Meal4"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/colorMealText"
-                android:textSize="12pt" />
+                android:textSize="12pt"
+                android:textColor="#000000"
+                android:id="@+id/mealItem4"
+                android:gravity="center"/>
 
             <TextView
-                android:id="@+id/kg_meal_item5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Meal5"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/colorMealText"
-                android:textSize="12pt" />
+                android:textColor="#000000"
+                android:textSize="12pt"
+                android:id="@+id/mealItem5"
+                android:gravity="center"/>
 
             <TextView
-                android:id="@+id/kg_meal_item6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Meal6"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/colorMealText"
-                android:textSize="12pt" />
+                android:text="Meal6"
+                android:textSize="12pt"
+                android:textColor="#000000"
+                android:id="@+id/mealItem6"
+                android:gravity="center"/>
 
             <FrameLayout
-                android:id="@+id/CHOICE_LAYOUT"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:orientation="horizontal"
-                android:visibility="visible">
+                android:visibility="visible"
+                android:id="@+id/CHOICE_LAYOUT">
 
-                <ImageButton
-                    android:id="@+id/kg_meal_good"
+                <!--Button
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginLeft="3pt"
-                    android:background="@drawable/btn"
-                    android:backgroundTint="@android:color/holo_blue_light" />
+                    android:layout_marginBottom="5dp"
+                    android:text="GOOD"
+                    android:textSize="5pt"
+                    android:textColor="#ffffff"
+                    android:id="@+id/GOOD"
+                    android:layout_gravity="left"
+                    android:background="@drawable/good_button"/>-->
 
                 <ImageButton
-                    android:id="@+id/kg_meal_bad"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_gravity="right"
+                    android:layout_marginLeft="3pt"
                     android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/colorText"
+                    android:id="@+id/GOOD"
+                    android:layout_gravity="left"
+                    android:background="@drawable/btn"/>
+
+                <!--<Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text="BAD"
                     android:layout_marginRight="3pt"
-                    android:background="@drawable/btn"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/BAD"
+                    android:textSize="5pt"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="right"
+                    android:background="@drawable/bad_button"/>-->
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text="BAD"
+                    android:layout_marginRight="3pt"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/BAD"
                     android:backgroundTint="@android:color/holo_red_light"
-                    android:text="BAD" />
+                    android:layout_gravity="right"
+                    android:background="@drawable/btn" />
 
                 <SeekBar
-                    android:id="@+id/kg_meal_choice"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center" />
+                    android:id="@+id/ChoiceBar"
+                    android:layout_gravity="center"/>
+
             </FrameLayout>
         </LinearLayout>
     </FrameLayout>
