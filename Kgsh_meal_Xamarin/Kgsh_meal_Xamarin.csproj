@@ -58,6 +58,7 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChoiceProcess.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MealAdapter.cs" />
     <Compile Include="MealListData.cs" />

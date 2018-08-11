@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using static Android.Views.View;
 
 namespace Kgsh_meal_Xamarin
 {
@@ -34,6 +35,17 @@ namespace Kgsh_meal_Xamarin
         MealViewHolder(TextView toMorning)
         {
             morning = toMorning;
+            morning.Click += Morning_Click;
+        }
+
+        private void Morning_Click(object sender, EventArgs e)
+        {
+            if (choiceLayout.Visibility == ViewStates.Gone)
+            {
+                choiceLayout.Visibility = ViewStates.Visible;
+
+                
+            }
         }
     }
 }
